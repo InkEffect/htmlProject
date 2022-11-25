@@ -1,0 +1,240 @@
+body {
+    background-image: url(steve-johnson-j-ZlgXrKr_4-unsplash.jpg);
+    background-color: #cccccc;
+    background-size: cover;
+    overflow: auto;
+    height: 100%;
+    -webkit-user-select: none;
+}
+
+#panel {
+    display: block;
+    text-align: center;
+    background-color: rgba(88, 1, 105, 0.425);
+    border: 1px solid rgb(225, 75, 255);
+    padding: 1rem;
+    border-radius: 25px;
+    width: 500px;
+    height: 700px;
+    margin: 6rem auto;
+    backdrop-filter: blur(4px);
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    box-shadow: 0px 0px 10px rgb(0, 204, 255);
+}
+
+.fa-solid.fa-user {
+    font-size: 85px;
+    padding-top: 20px;
+    color: rgb(225, 75, 255);
+    border-radius: 100%;
+    image-rendering: optimizeQuality;
+    object-fit: cover;
+    text-shadow: 0 0 10px #ff00ea;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    transition: display 2s ease-out 100ms;
+}
+
+.title {
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+    padding: 10px;
+    width: 300px;
+    margin: 1rem auto;
+    position: relative;
+    display: inline-block;
+    background: -webkit-linear-gradient(0deg, rgb(224, 224, 224) 0%,rgb(104, 215, 230) 65%, rgb(0, 238, 255) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-content {
+    background-color: rgba(247, 0, 0, 0.2);
+    color: white;
+    font-size: 15px;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    transition-duration: 10s;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    padding-bottom: 5px;
+    width: 125px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(44, 37, 37);
+    -webkit-text-fill-color: white;
+}
+
+.title:hover .title-content {
+    opacity: 1;
+}
+
+.element {
+    position: absolute;
+    margin-left: 685px;
+    margin-top: 1.5px;
+    height: 700px;
+    width: 500px;
+    padding: 1rem;
+    border: 1px solid rgb(225, 75, 255);
+    border-radius: 25px;
+    animation-name: stretch;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.element2 {
+    position: absolute;
+    margin-left: 685px;
+    margin-top: 1.5px;
+    height: 700px;
+    width: 500px;
+    padding: 1rem;
+    border: 1px solid rgb(225, 75, 255);
+    border-radius: 25px;
+    animation-name: stretch2;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch2 {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.hr1 {
+    border: none;
+    height: 2px;
+    background-color: rgb(216, 18, 199);
+    width: 400px;
+    box-shadow: 0px 1px 5px rgb(216, 18, 199);
+}
+
+#social-icons {
+    font-size: 50px;
+    text-shadow: 2px 2px 2px cyan, 3px 3px 2px red;
+}
+
+.fa-instagram {
+    color: white;
+    transition: transform 0.25s ease-out 100ms;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.15);
+}
+
+.fa-github {
+    margin-left: 55px;
+    color: white;
+    transition: transform 0.25s ease-out 100ms;
+}
+
+.fa-github:hover {
+    transform: scale(1.15);
+}
+
+.fa-envelope {
+    margin-left: 55px;
+    color: white;
+    transition: transform 0.25s ease-out 100ms;
+}
+
+.fa-envelope:hover {
+    transform: scale(1.25);
+}
+
+.experience {
+    text-align: left; 
+    margin-left: 50px; 
+    font-size: 30px; 
+    margin-top: 1px; 
+    color: white;
+    text-shadow: 1px 1px 3px cyan, 3px 3px 5px red;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+}
+
+.language {
+    width: 80px;
+    height: 25px;
+    padding-top: 5px;
+    text-align: center;
+    margin: auto;
+    border: 3px solid rgb(241, 9, 222);
+    clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(63, 201, 206);
+    text-shadow: 0px 1px 3px;
+}
+
+.socials {
+    text-align: center;  
+    font-size: 30px; 
+    margin-top: 80px; 
+    color: white;
+    text-shadow: 1px 1px 3px cyan, 3px 3px 5px red;
+}
+
+.location {
+    color: white;
+    font-size: 17.5px;
+}
+
+.fa-location-dot {
+    color: cyan;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#gitLink {
+    position: absolute;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+#emailLink {
+    position: absolute;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-left: 90px;
+    margin-top: 10px;
+}
